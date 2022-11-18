@@ -5,7 +5,7 @@ function Todos({ id, todo, isComplete, dispatch }) {
   return (
     <div className="eachTodo">
       <li className="flex-list">
-        <p>{todo}</p>
+        <p style={isComplete ? {color:"#777"}:{color: "black"}}>{todo}</p>
 
         <button
           className="complete"
